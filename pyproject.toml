@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "rag-note"
+version = "0.1.0"
+description = "rag note for Geultto 10th"
+authors = ["Judy <mjchoi0831@gmail.com>"]
+license = "Judy Choi"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+poetry-dotenv-plugin = "^0.2.0"
+openai = "^1.50.2"
+langchain = "^0.3.1"
+langchainhub = "^0.1.21"
+pypdf = "^5.0.1"
+langchain-community = "^0.3.1"
+chromadb = "^0.5.11"
+tiktoken = "^0.7.0"
+langchain-postgres = "^0.0.12"
+langchain-openai = "^0.2.1"
+psycopg = {extras = ["binary", "pool"], version = "^3.2.3"}
+psycopg2 = "^2.9.9"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
